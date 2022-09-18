@@ -20,10 +20,8 @@ body{
 }
 .input-div label {
     position: absolute;
-    /* color: #fff; */
     top: 18%;
     left: 9px;
-    /* transform: translate(50%, -50%); */
     transition: 0.5s;
 }
 .input-class:focus ~ label {
