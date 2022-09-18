@@ -1,0 +1,50 @@
+body{
+    background-image: url(https://images.wallpaperscraft.com/image/single/eclipse_moon_circle_138151_1600x900.jpg);
+}
+.main-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main-div .card{
+    background-color: transparent;
+    overflow: hidden;
+}
+.main-div .card-body {
+    z-index: 9;
+    background-color: #000;
+    width: 99.2%;
+    margin: 0.8px auto;
+    max-height: 360px;
+}
+.input-div label {
+    position: absolute;
+    /* color: #fff; */
+    top: 18%;
+    left: 9px;
+    /* transform: translate(50%, -50%); */
+    transition: 0.5s;
+}
+.input-class:focus ~ label {
+    top: -28px;
+    left: 0px;
+    transition: 0.5s;
+    color: #fff !important;
+}
+.input-class {
+    z-index: 9;
+}
+@keyframes spin { 
+    100% { 
+      transform: rotateZ(360deg);
+    }
+}
+.main-div .border-animation{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    border: 2px solid #fff;
+    animation: spin 10s linear infinite;
+}
